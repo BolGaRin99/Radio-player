@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Epi Tunes</title>
+    <script src="scripts/index.js" type="module"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.min.css">
+</head>
+
+<body>
+
+    <a href="index.html">
+        <h1 class="header"><span class="red-text">Epi </span>Tunes</h1>
+    </a>
+
+    <main>
+        <section class="player">
+            <div class="player-btn player-radio">Радіо</div>
+        </section>
+
+        <div class="temp">
+            <h2>
+            </h2>
+        </div>
+
+        <article class="player-block radio">
+            <div class="container">
+                <div class="radio-container">
+                    <div class="radio-player">
+                        <div class="radio-cover">
+                            <img class="radio-cover__img" src="radio/start.jpg" alt="обложка">
+                        </div>
+                        <h3 class="radio-header__big">Обери радіостанцію</h3>
+                    </div>
+                    <form class="radio-navigation">
+                        <h2 class="radio-header">Радіостанції</h2>
+                        <ul class="radio-list">
+                            <li class="radio-item">
+                                <label>
+									<div class="radio-check">
+										<img class="radio-img" src="radio/logo_kissfm.png" alt="обложка">
+									</div>
+									<input class="radio-btn" type="radio" id="KissFM" name="radioStantion"
+											data-radio-stantion="https://online.kissfm.ua/KissFM">
+									<span class="radio-name">Kiss FM</span>
+								</label>
+                            </li>
+
+                            <li class="radio-item">
+                                <label>
+									<div class="radio-check">
+										<img class="radio-img" src="radio/logo_djfm.png" alt="обложка">
+									</div>
+									<input class="radio-btn" type="radio" id="djfm" name="radioStantion"
+											data-radio-stantion="https://cast.brg.ua/djfm_main_public_mp3_hq">
+									<span class="radio-name">DJ FM</span>
+								</label>
+                            </li>
+
+                            <li class="radio-item">
+                                <label>
+									<div class="radio-check">
+										<img class="radio-img" src="radio/logo_hitfm.png" alt="обложка">
+									</div>
+									<input class="radio-btn" type="radio" id="hitfm" name="radioStantion"
+											data-radio-stantion="https://online.hitfm.ua/HitFM">
+									<span class="radio-name">Хіт FM</span>
+								</label>
+                            </li>
+
+                            <li class="radio-item">
+                                <label>
+									<div class="radio-check">
+										<img class="radio-img" src="radio/logo_luxfm.png" alt="обложка">
+									</div>
+									<input class="radio-btn" type="radio" id="luxfm" name="radioStantion"
+											data-radio-stantion="https://icecast.luxnet.ua/lux_mp3">
+									<span class="radio-name">Люкс ФМ</span>
+								</label>
+                            </li>
+
+                            <li class="radio-item">
+                                <label>
+									<div class="radio-check">
+										<img class="radio-img" src="radio/logo_melodiafm.png" alt="обложка">
+									</div>
+									<input class="radio-btn" type="radio" id="melodiafm" name="radioStantion"
+											data-radio-stantion="https://online.melodiafm.ua/MelodiaFM">
+									<span class="radio-name">Мелодія FM</span>
+								</label>
+                            </li>
+
+                            <li class="radio-item">
+                                <label>
+									<div class="radio-check">
+										<img class="radio-img" src="radio/logo_radioroks.png" alt="обложка">
+									</div>
+									<input class="radio-btn" type="radio" id="radioroks" name="radioStantion"
+											data-radio-stantion="https://online.radioroks.ua/RadioROKS">
+									<span class="radio-name">Radio ROKS</span>
+								</label>
+                            </li>
+
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer-fix radio-footer">
+                <button class="radio-stop fa fa-play"></button>
+            </footer>
+        </article>
+    </main>
+
+
+</body>
+
+</html>
